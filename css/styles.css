@@ -1,0 +1,110 @@
+:root{
+    --pampas-white: #E5E3DA;
+    --green-haze: #274840;
+    --salomie: #f2d06d;
+    --valencia: #d03f4e;
+    --royal-blue: #3e5e8c;
+    --pure-black: #000000;
+    --pure-white: #ffffff;
+
+}
+
+
+body{
+    background-color: var(--pampas-white);
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.section-padding{
+    padding: 20px;
+}
+
+.header-section{
+    background-color: var(--green-haze);
+}
+
+.header-section span{
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 50px !important;
+    float: right;
+}
+
+.header-section a{
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.header-section a:hover{
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.header-above{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+.btn-primary-header{
+    color: #ffffff;
+    margin: 0px 10px;
+    padding: 5px 20px;
+    border: 0.5px solid rgba(135, 135, 135, 0.537);
+    background-color: transparent;
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary-header:hover{
+    color: #ffffff;
+    margin: 0px 10px;
+    padding: 5px 20px;
+    border: 0.5px solid rgba(135, 135, 135, 0.66);
+    background-color: rgba(135, 135, 135, 0.449);
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 5rem;
+    padding: 2px;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: var(--green-haze);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 25px;
+}
+
+.dropdown-item:hover{
+    background-color: var(--green-haze);
+}
+
+.login-circle::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-bottom: 1px;
+    background-color: #fff;
+    display: inline-block;
+}
