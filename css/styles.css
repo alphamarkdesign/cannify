@@ -29,6 +29,26 @@
     background: #27484037;
   }
 
+  .scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px !important;
+    height: 8px;
+    background: #0a1714 !important; 
+    border-radius: 0 !important;
+}
+
+.scrollbar-track-y {
+    top: 0;
+    right: 0;
+    width: 6px !important;
+    height: 100%;
+    background: #2f343361 !important;
+}
+
+
+
 :root{
     --pampas-white: #E5E3DA;
     --green-haze: #274840;
@@ -44,6 +64,8 @@
 body{
     background-color: var(--pampas-white);
     font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
 }
 
 
