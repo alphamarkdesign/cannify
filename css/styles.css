@@ -299,14 +299,47 @@ body{
 
 
 .btn-shop{
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #fff;
     background-color: var(--green-haze);
     padding: 20px 40px;
 }
 
-.third-section .col-md-8 h2{
-    font-size: 64px;
+.btn-shop:hover{
+    color: #fff;
+    background-color: var(--green-haze);
+    padding: 20px 40px;
 }
+
+p{
+    font-size: 14px;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.qualities{
+    background-color: #C9CEC9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.qualities h4{
+    margin-bottom: 20px;
+}
+
+.qualities img{
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
