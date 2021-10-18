@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     
-
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 
@@ -31,7 +31,7 @@
 
                 </div>
                 <div class="header-buttons">
-                    <button class="btn-primary-header login-circle">HCF Login</button>
+                    <button class="btn-primary-header login-circle">HCP Login</button>
                     <button class="btn-primary-header">Cannify Shop</button>
 
                     
@@ -122,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section class="section-padding pt-5 mt-5">
+    <section class="section-padding tb-section-padding">
         <div class="container third-section">
             <div class="row">
                 <div class="col-md-4">
@@ -141,12 +141,28 @@
             </div>
         </div>
     </section>
-    <section class="section-padding partners-section">
+    <section class="partners-section tb-section-padding">
         <div class="container">
-                SLIDER
+            <div class="row">
+                <div class="col-md-2">
+                    <span>Cannify Partners</span>
+                    <p>Aurora Medicine, Bedrocan, Tilray, Storz & Bickel, Aphria</p>
+                </div>
+            </div>
+        
+        </div>
+        <div class="container-fluid">
+            <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 2, "wrapAround": true, "prevNextButtons": false,
+            "pageDots": false }'>
+                <img class="carousel-image" data-flickity-lazyload="./img/bedrocan.png" />
+                <img class="carousel-image" data-flickity-lazyload="./img/aurora.png" />
+                <img class="carousel-image" data-flickity-lazyload="./img/aphria.png" />
+                <img class="carousel-image" data-flickity-lazyload="./img/tilaray.png" />
+                <img class="carousel-image" data-flickity-lazyload="./img/storznbickel.png" />
+            </div>
         </div>
     </section>
-    <section class="section-padding pt-5 mt-5">
+    <section class="section-padding tb-section-padding">
         <div class="container fourth-section">
             <div class="row">
                 <div class="col-md-6">
@@ -157,24 +173,24 @@
                 </div>
                 <div class="col-md-3">
                     <div class="qualities">
-                        <img src="./img/cannabis-icon.svg" alt="Cannabis">
+                        <img src="./img/marijuana.png" alt="Cannabis">
                         <h4>Consistent Products.</h4>
                         <p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad.</p>
                     </div>
                     <div class="qualities">
-                        <img src="./img/cannabis-icon.svg" alt="Cannabis">
+                        <img src="./img/marijuana.png" alt="Cannabis">
                         <h4>Consistent Products.</h4>
                         <p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="qualities">
-                        <img src="./img/cannabis-icon.svg" alt="Cannabis">
+                        <img src="./img/marijuana.png" alt="Cannabis">
                         <h4>Consistent Products.</h4>
                         <p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad.</p>
                     </div>
                     <div class="qualities">
-                        <img src="./img/cannabis-icon.svg" alt="Cannabis">
+                        <img src="./img/marijuana.png" alt="Cannabis">
                         <h4>Consistent Products.</h4>
                         <p>Mea an dicunt tincidunt forensibus. Porro mediocrem at pro, ei quem consequuntur interpretaris quo. Eum propriae cotidieque an. Errem sententiae mei ad.</p>
                     </div>
@@ -182,9 +198,148 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="section-padding tb-section-padding company-news-section">
+        <div class="container">
+            <div class="news">
+                <div class="news-info">
+                    <span>Cannify Pharma GbmH</span>
+                    <p>Company News & Updates</p>
+                </div>
+                <div class="news-button">
+                    <button class="btn-primary-header">View All News</button>
+                </div>
+            </div>
+            <div class="news-blog">
+                <h3>Company Updates</h3>
+            </div>
+            <div class="container">
+            <div class="row info-carousel">
+                <div class="col-md-2">
+                    <p>Next/Prev:</p>
+                    <button class="next-button"></button>
+                    <button class="prev-button"></button>
+                </div>
+                <div class="col-md-4">
+                    <div class="update-cards">
+                        <img src="./img/doctor.png" alt="Doctor">
+                        <p>October 10, 2021 <br><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> Company News </p>
+                        <h4>Prioritizing Health and Safety to Remain Operational during COVID-19</h4>
+                        <a href="#" type="button">Read More<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="update-cards">
+                        <img src="./img/packages.png" alt="Packages">
+                        <p>October 10, 2021 <br><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> Company News </p>
+                        <h4>Prioritizing Health and Safety to Remain Operational during COVID-19</h4>
+                        <a href="#" type="button">Read More<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="update-cards">
+                        <img src="./img/packages.png" alt="Packages">
+                        <p>October 10, 2021 <br><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> Company News </p>
+                        <h4>Prioritizing Health and Safety to Remain Operational during COVID-19</h4>
+                        <a href="#" type="button">Read More<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
         
-
+    <section class="section-padding products-section tb-section-padding">
+        <div class="container">
+                    <div class="first-col">
+                        <span>Cannify Shop</span>
+                        <p>Medical Cannabis Products</p>
+                    </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h2>High-quality medical cannabis products.</h2>
+                    <p>Cannify sells medicinal cannabis flowers from Aurora (Pedanios) and Bedrocan. All Cannify products are EU-GMP licensed and subject to the strictest controls - so that Cannify can offer you high quality medical cannabis.</p>
+                    <button type="button" class="btn btn-shop">Cannify Shop</button>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <img class="img-responsive w-100 mb-5" src="./img/pic-1.png" alt="Leafdrop in a jar">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-responsive w-100" src="./img/pic-2.png" alt="Woman">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid footer-graphic m-0 p-0"></div>
+    <section class="footer-section section-padding tb-section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 contact-col">
+                <img class="img-responsive mb-5" width="75px" height="90px" src="./img/cannify-symbol.svg" alt="Cannify Symbol">
+                <br>
+                <span>® Cannify Pharma GmbH</span>
+                <p>Theaterplatz 2, D-52062 Aachen</p>
+                –<br>
+                <p><span>Telefon:</span> <a href="tel:+49 (0) 241 7053991">+49 (0) 241 7053991</a></p> 
+                <p><span>Telefax:</span><a href="tel:+49 (0) 241 70539920">+49 (0) 241 70539920</a></p>
+                <p><span>E-Mail:</span><a href = "mailto:info@cannify.de"> info@cannify.de </a></p>
+            </div>
+            <div class="col-md-2 contact-col-1">
+                <div class="footer-categories mb-5">Company</div>
+                <a href="#">About Us </a>
+                <a href="#">GMP Certificate </a>
+                <a href="#">Downloads</a>
+                <a href="#">Careers</a>
+                <a href="#">Cannify Shop</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col-md-2 contact-col-1">
+                <div class="footer-categories mb-5">Knowledge</div>
+                <a href="#">Medical Cannabis</a>
+                <a href="#">For Patients</a>
+                <a href="#">For Pharmacist</a>
+                <a href="#">For Doctors</a>
+            </div>
+            <div class="col-md-2 contact-col-1">
+                <div class="footer-categories mb-5">Legal</div>
+                <a href="#">Imressium</a>
+                <a href="#">Cookies</a>
+                <a href="#">Shipping</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="col-md-2 contact-col-1">
+                <div class="footer-categories mb-5">Membership</div>
+                <img class="w-50 img-responsive m-2" src="./img/can-med.png" alt="Cannabinoid Medicines">
+                <img class="w-50 img-responsive m-2" src="./img/bpc.png" alt="BPC">
+                <br>
+                <img class="w-50 img-responsive m-2" src="./img/vca.png" alt="VCA">
+            </div>
+        </div>
+        <div class="row last-row">
+            <hr>
+            <div class="col-md-4">
+                <img class="img-responsive" width="167" height="48" src="./img/cannify-logo.svg" alt="Cannify Logo">
+            </div>
+            <div class="col-md-4">
+                <span>© 2021 Cannify Pharma GmbH</span>
+                <br>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+                     Privacy Policy</a> / <a href="#">Terms & Conditions</a> / <a href="#">Impressum</a>
+            </div>
+            <div class="col-md-4">
+                <div style="float: right;">
+                    <span>Social Media</span>
+                    <br>
+                    <a href="facebook.com"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg> 
+                        Facebook</a> / <a href="linkedin.com">Linkedin</a> / <a href="twitter.com">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="./js/flickity.pkgd.min.js"></script>
     <script src="./js/smooth-scrollbar.js"></script>
     <script src="./js/script.js"></script>
     <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

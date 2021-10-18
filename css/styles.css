@@ -1,4 +1,21 @@
 
+
+
+
+h2{
+    font-size: 64px;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 48px;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    font-weight: 400;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 6px;
@@ -316,10 +333,6 @@ p{
     font-size: 14px;
 }
 
-h2{
-    font-size: 64px;
-    line-height: 1.2;
-}
 
 .qualities{
     background-color: #C9CEC9;
@@ -335,11 +348,275 @@ h2{
     height: 66px;
     width: 66px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--pampas-white);
     padding: 15px;
     margin-bottom: 30px;
 }
 
+.products-section p{
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: -3%;
+}
+
+.products-section span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.first-col{
+    display: flex;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+
+  
+  .carousel {
+    background: var(--pampas-white);
+  }
+  
+  .carousel-image {
+    background-color: #ffffff40;
+    object-fit: scale-down;
+    display: block;
+    /* set min-width, allow images to set cell width */
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 106px;
+    min-height: 106px;
+    margin: 0 10px;
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  
+  .carousel.is-fullscreen .carousel-image {
+    height: auto;
+    max-height: 100%;
+  }
+
+ .tb-section-padding{
+     padding-top: 5%;
+     padding-bottom: 5%;
+ }
+
+.partners-section span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.partners-section p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.company-news-section{
+    background-color: var(--green-haze);
+    color: #fff;
+}
+
+.company-news-section span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.company-news-section p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.news-blog{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.info-carousel p{
+    color: #ffffff70;
+    font-size: 12px;
+}
+
+.next-button::before{
+    content: '\2190';
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.prev-button::before{
+    content: '\2192';
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: 5px;
+    transition: all .3s ease-in-out;
+}
+
+
+.next-button:hover{
+    background-color: rgba(135, 135, 135, 0.449);
+    transition: all .3s ease-in-out;
+}
+
+.prev-button:hover{
+    background-color: rgba(135, 135, 135, 0.449);
+    transition: all .3s ease-in-out;
+}
+
+.update-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid #ffffff60;
+    padding-left: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.update-cards p{
+    font-size: 12px;
+    color:#ffffff70;
+    font-weight: 300;
+    padding-top: 15px;
+}
+
+.update-cards h4{
+    font-size: 25px;
+    color:#ffffff;
+    font-weight: 300;
+    padding-top: 15%;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.update-cards a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-graphic{
+    position: static;
+    background-image: url(../img/footer-graphic.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100px;
+}
+
+
+.contact-col span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-col p{
+    font-size: 14;
+    font-weight: normal;
+    margin: 0;
+}
+
+.contact-col a:hover{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #000;
+    transition: all .1 ease-in-out;
+    text-decoration: none;
+}
+
+.contact-col a{
+    font-size: 14px;
+    font-weight: medium;
+    margin-bottom: 7px;
+    color: #000;
+    transition: all .1 ease-in-out;
+    text-decoration: none;
+}
+
+.contact-col-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-col-1 span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.5rem!important;
+}
+
+.contact-col-1 a{
+    font-size: 14px;
+    font-weight: medium;
+    margin-bottom: 7px;
+    color: #000;
+    transition: all .1 ease-in-out;
+    text-decoration: none;
+}
+
+.contact-col-1 a:hover{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #000;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-categories{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 90px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.last-row{
+    padding-top: 6%;
+}
+
+.last-row span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.last-row a{
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+
+.last-row a:hover{
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
@@ -347,8 +624,10 @@ h2{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .carousel-cell { width: 50%; }
+  }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
