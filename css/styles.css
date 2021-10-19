@@ -80,6 +80,7 @@ h3{
 
 body{
     background-color: var(--pampas-white);
+    transition: background-color 1s ease;
     font-family: 'DM Sans', sans-serif;
     width: 100%;
     height: 100vh;
@@ -87,7 +88,6 @@ body{
 
 
 .section-padding{
-
     padding: 0 2%;
 }
 
@@ -395,11 +395,6 @@ p{
     max-height: 100%;
   }
 
-  .news-card{
-      display: flex;
-      flex-direction: column;
-  }
-
 
  .tb-section-padding{
      padding-top: 5%;
@@ -494,14 +489,39 @@ p{
 }
 
 
-.update-cards p{
+.news-carousel{
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-cell {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-right: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #ffffff40;
+}
+
+.carousel-cell img{
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-cell p{
     font-size: 12px;
     color:#ffffff70;
     font-weight: 300;
     padding-top: 15px;
 }
 
-.update-cards h4{
+.carousel-cell h4{
     font-size: 25px;
     color:#ffffff;
     font-weight: 300;
@@ -510,7 +530,7 @@ p{
     letter-spacing: -0.5px;
 }
 
-.update-cards a{
+.carousel-cell a{
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
@@ -622,6 +642,15 @@ p{
     width: 100vw;
 }
 
+.color-green {
+    background-color: var(--green-haze);
+  }
+
+  .color-yellow {
+    background-color: var(--pampas-white);
+  }
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 
@@ -662,6 +691,16 @@ p{
       }
 
 
+      .carousel-cell {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-right: 20px;
+        padding-left: 10px;
+        border-left: 1px solid #ffffff40;
+    }
+
+
 
 
     #second-info-block{
@@ -671,7 +710,19 @@ p{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    
+    .carousel-cell {
+        margin-top: 20px ;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-right: 20px;
+        padding-left: 10px;
+        border-left: 1px solid #ffffff40;
+    }
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
