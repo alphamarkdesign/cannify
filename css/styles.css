@@ -678,6 +678,15 @@ p{
 @media only screen and (max-width: 768px) {
 
 
+    h1{
+        font-size: 48px !important;
+    }
+
+    h2{
+       font-size: 36px !important;
+    }
+
+
     .logo-carousel-image {
         background-color: #ffffff40;
         object-fit: scale-down;
