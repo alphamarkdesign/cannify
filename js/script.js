@@ -1,2 +1,2 @@
-let Scrollbar = window.Scrollbar;
-Scrollbar.init(document.querySelector('body'));
+// let Scrollbar = window.Scrollbar;
+// Scrollbar.init(document.querySelector('body'));

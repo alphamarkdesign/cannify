@@ -78,6 +78,50 @@ h3{
 }
 
 
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--green-haze);
+    z-index: 99999999;
+}
+
+#preloader-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loading-symbol {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* .reveal-text {
+    visibility: hidden;
+    display: inline-block;
+  }
+  
+  .line {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  } */
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
 body{
     background-color: var(--pampas-white);
     transition: background-color 1s ease;
@@ -95,7 +139,7 @@ body{
     background-color: var(--green-haze);
 }
 
-.header-section span{
+.contact-tel-email{
     color: #ffffff;
     font-weight: bold;
     margin-right: 50px !important;
@@ -104,13 +148,11 @@ body{
 
 .header-section a{
     color: #ffffff;
-    font-weight: 300;
     text-decoration: none;
 }
 
 .header-section a:hover{
     color: #ffffff;
-    font-weight: 300;
     text-decoration: underline;
 }
 
@@ -269,14 +311,21 @@ body{
     color: #fff;
     font-weight: bold;
     font-size: 18px;
+    text-underline-offset: var(--offset, 1px);
+    text-decoration: underline 0.15em;
+    transition: --offset 400ms, text-decoration-color 400ms;
 }
 
 
-.info-row a:focus{
-    color: #fff;
+.info-row a:hover{
+    color: var(--pampas-white);
     font-weight: bold;
     font-size: 18px;
+    --offset: 4px;
+    text-decoration-color: var(--pampas-white);
 }
+
+
 
 #second-info-block{
     border-right: 0.5px solid rgba(135, 135, 135, 0.66);;
@@ -321,6 +370,7 @@ body{
     color: #fff;
     background-color: var(--green-haze);
     padding: 20px 40px;
+    border-radius: 3px;
 }
 
 .btn-shop:hover{
@@ -333,6 +383,10 @@ p{
     font-size: 14px;
 }
 
+
+.qualities-section{
+    min-height: 100vh !important;
+}
 
 .qualities{
     background-color: #C9CEC9;
@@ -351,6 +405,10 @@ p{
     background-color: var(--pampas-white);
     padding: 15px;
     margin-bottom: 30px;
+}
+
+.products-section{
+    min-height: 100vh !important;
 }
 
 .products-section p{
@@ -415,6 +473,13 @@ p{
     background-color: var(--green-haze);
     color: #fff;
     overflow: hidden;
+    min-height: 100vh !important;
+    scroll-snap-type: y proximity;
+    
+}
+
+.company-news-container{
+    scroll-snap-align: start;
 }
 
 .company-news-section span{
@@ -525,6 +590,7 @@ p{
     font-size: 25px;
     color:#ffffff;
     font-weight: 300;
+    margin-bottom:40px;
     padding-top: 15%;
     line-height: 1.2;
     letter-spacing: -0.5px;
@@ -624,14 +690,14 @@ p{
 .last-row a{
     font-size: 14px;
     font-weight: normal;
-    color: #000;
+    color: var(--green-haze);
 }
 
 .last-row a:hover{
     font-size: 14px;
     font-weight: normal;
     text-decoration: none;
-    color: #000;
+    color: var(--green-haze);
 }
 
 
@@ -649,6 +715,8 @@ p{
   .color-yellow {
     background-color: var(--pampas-white);
   }
+
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -687,6 +755,11 @@ p{
     }
 
 
+    h1 .line-wrapper{
+        overflow: hidden;
+       }
+
+
     .logo-carousel-image {
         background-color: #ffffff40;
         object-fit: scale-down;
@@ -709,7 +782,19 @@ p{
         border-left: 1px solid #ffffff40;
     }
 
+    .picture-column-1{
+        order: 1;
+        margin-bottom: 25px;
+    }
 
+    .picture-column-2{
+        order: 2;
+        margin-bottom: 25px;
+    }
+
+    .text-column{
+        order: 3;
+    }
 
 
     #second-info-block{
@@ -739,3 +824,74 @@ p{
 
 }
 
+
+
+/* 
+.button-magnetic{
+border: 1px solid rgba(#000,.2);
+  display: inline-block;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+   
+.text{
+    display: inline-block;
+    pointer-events: initial;
+    position: relative;
+  }
+
+.button--primary{
+  position: relative;
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all .3 ease;
+  box-shadow: 0 3px 10px rgba(#000, .15);
+}
+
+.button::before{
+    content: "";
+    display: inline-block;
+    background: #2d2d2d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    transition: transform .3 ease;
+} */
+
+
+.magnetic {
+    margin: -100px;
+    padding: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    /*border: 1px solid #000; //use this for debugging*/
+  }
+  
+  .my-button {
+    background-color: #FFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+  .my-button:hover {
+    color: #FFF;
+    background-color: #000;
+    transition: 0.5s background-color, 0.5s box-shadow;
+    box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
+  }
+  
