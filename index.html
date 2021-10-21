@@ -17,11 +17,10 @@
 </head>
 <body>
 
-    <!-- <span class="preloader">
-        <span class="loading-symbol"><img src="./img/cannify-symbol.svg" alt=""></span>
-    </span> -->
-      
-      
+    <span class="preloader"><span style="position: absolute; width: 80px; margin:0 auto; top:50%;z-index:14;" class="loading-symbol"><img src="./img/cannify-symbol.svg" alt=""></span></span>
+        <div class="loading-symbol-box"></div>
+        
+    
       <span id="circle" class="circle"></span>
 
     <section class="header-section section-padding">
@@ -98,8 +97,15 @@
             </nav>
             <div class="bg-video">
                 <div class="container headline-container">
-                    <div class="line">
-                        <h1 style="word-break: break-all;">Health Redefined.</h1>
+                    <div>
+                        <h1>
+                            <span>
+                              <span>Health</span>
+                            </span>
+                            <span>
+                              <span>Refined.</span>
+                            </span>
+                          </h1>
                     </div>
                 </div>
             <video class="vid" width="100%" src="./img/Woman smiling in the woods.mp4" autoplay muted loop></video>
@@ -380,7 +386,6 @@
 
 
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="./js/gsap.js"></script>
@@ -391,22 +396,46 @@
 
 
     <script>
-        // previous
-$('.previous-button').on( 'click', function() {
-  $carousel.flickity('previous');
-});
-// next
-$('.next-button').on( 'click', function() {
-  $carousel.flickity('next');
+$(window).on("load", function(){
+
+
+    
+
+    
+
+    gsap.to('.loading-symbol-box', 1.5, {
+        delay: 1 ,
+        duration: 2,
+        y: '-100%',
+        ease: 'slow (0.9, 1, false)',
+    });
+
+    let tl = new TimelineMax();
+    tl.to('.preloader', 1.5, {
+        delay: 2 ,
+        height:'0vh',
+        ease: 'expo.inOut'
+    });
+
+
+
+    // tl.to(".loading-symbol-box", 1.5, {
+    // y: "-100%",
+    // ease: Expo.easeInOut,
+    // });
+
 });
     </script>
 
+
     <!-- <script>
         $(window).on("load", function(){
-          $(".preloader").slideUp("slow");
-        });
-      </script>-->
-    
+        //   $(".preloader").delay(600).easeInOut("1000");
+        gsap.fromTo('.preloader', {scaleY: 0}, {duration: 1, scaleY : 1})
+        
+        ;});
+      </script> -->
+
     <script>
         jQuery(document).ready(function() {
         var mouseX = 0, mouseY = 0;
@@ -435,14 +464,14 @@ $('.next-button').on( 'click', function() {
 
       <script>
           var magnets = document.querySelectorAll('.magnetic, .carousel-magnetic')
-var strength = 50
+            var strength = 50
 
-magnets.forEach( (magnet) => {
-  magnet.addEventListener('mousemove', moveMagnet );
-  magnet.addEventListener('mouseout', function(event) {
-    TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
-  } );
-});
+            magnets.forEach( (magnet) => {
+            magnet.addEventListener('mousemove', moveMagnet );
+            magnet.addEventListener('mouseout', function(event) {
+                TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
+            } );
+    });
 
 function moveMagnet(event) {
   var magnetButton = event.currentTarget

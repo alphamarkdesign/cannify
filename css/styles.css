@@ -84,8 +84,9 @@ h3{
     position: fixed;
     top: 0;
     left: 0;
-    background: var(--green-haze);
-    z-index: 99999999;
+    background: var(--pampas-white);
+    z-index: 10;
+    overflow: hidden;
 }
 
 #preloader-logo {
@@ -108,10 +109,13 @@ h3{
     margin: auto;
 }
 
-.line{
-    position: relative;
+
+
+.headline-container span{
+    display: inline-block;
     overflow: hidden;
 }
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
@@ -327,7 +331,7 @@ body{
 }
 
 .headline-container{
-    z-index: 1000;
+    z-index: 8;
     display: flex;
     position: absolute;
     height: 100%;
@@ -336,6 +340,8 @@ body{
 }
 
 .headline-container h1{
+    letter-spacing: -3px;
+    font-weight: 200;
     color: #fff;
     font-size: 96px;
     padding-left: 40px;
@@ -701,6 +707,17 @@ p{
     max-width: none;
     width: 100vw;
 }
+
+.loading-symbol-box {
+    background:var(--pampas-white);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 15;
+  }
 
 /* 
 .contact-tel-email a::after{

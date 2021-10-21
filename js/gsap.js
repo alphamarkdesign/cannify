@@ -1,3 +1,6 @@
+
+window.onload = function() {
+
 gsap.registerPlugin(ScrollTrigger);
 
 const sections = gsap.utils.toArray(".panel");
@@ -21,20 +24,19 @@ const container = document.querySelector('body');
   .to(container, { duration: 0.3, backgroundColor: '#E5E3DA', ease: "none" }, 1)
   
 
-    gsap.from("loading-symbol",
-    {
+  
+
+    gsap.fromTo("div", {duration: 2, stagger: 0.5},{duration:2, y: 0, stagger :0.5})
+  
+
+    gsap.from("h1 span>span", {
+      duration: 1.5,
+      y: 250,
+      autoAlpha: 0,
+      ease: Power3.out,
+      stagger: 0.3
     })
   
 
 
-      // gsap.from("div", {
-      //   scrollTrigger: {
-      //   trigger: "section",
-      //   toggleActions: "play none none none"
-      //   },
-      //   y: 100,
-      //   opacity: 0,
-      //   duration: 1,
-      //   stagger: 0.1
-      // })
-      
+}
