@@ -24,8 +24,6 @@ const container = document.querySelector('body');
   .to(container, { duration: 0.3, backgroundColor: '#E5E3DA', ease: "none" }, 1)
   
 
-  
-
     gsap.from("h1 span>span", {
       duration: 1.5,
       delay: 1.5,
@@ -37,4 +35,8 @@ const container = document.querySelector('body');
   
     gsap.fromTo(".breakline", { delay: 2,  duration: 1, opacity: 0, width: 0}, { delay: 2,duration: 1, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
     // gsap.fromTo(".vid", {delay: 1.5, duration: 1, height: 0},{delay: 1.5, duration: 1, height: '70vh', ease: "slow (0.3, 0.4, false"})
+
+
+
+    gsap.fromTo(".nav-item , .navbar-brand", { delay: 3,  duration: 0.5, opacity: 0 ,y:- 50, }, { delay: 3,duration: 0.5, opacity: 1, y: 0, ease: "slow (0.5 , 0.7, false)"})
 }
