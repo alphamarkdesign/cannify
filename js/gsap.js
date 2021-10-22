@@ -33,7 +33,7 @@ const container = document.querySelector('body');
       stagger: 0.3
     })
   
-    gsap.fromTo(".breakline", { delay: 2,  duration: 1, opacity: 0, width: 0}, { delay: 2,duration: 1, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
+    gsap.fromTo(".breakline", { delay: 2,  duration: 0.7, opacity: 0, width: 0}, { delay: 2,duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
     // gsap.fromTo(".vid", {delay: 1.5, duration: 1, height: 0},{delay: 1.5, duration: 1, height: '70vh', ease: "slow (0.3, 0.4, false"})
 
 
@@ -44,4 +44,8 @@ const container = document.querySelector('body');
     gsap.fromTo(".header-contact > span", { delay: 2.6,  duration: 0.5, opacity: 0 ,stagger: 0.03, ease: "slow (0.9 , 4, false)" }, { delay: 2.6,duration: 0.5, opacity: 1,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
 
     gsap.fromTo(".header-buttons > button", { delay: 2.3,  duration: 0.3, opacity: 0 ,stagger: 0.1, ease: "slow (0.9 , 4, false)" }, { delay: 2.3,duration: 0.3, opacity: 1,stagger: 0.1,  ease: "slow (0.9 , 4, false)"})
+
 }
+
+
+

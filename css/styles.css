@@ -78,6 +78,172 @@ h3{
 }
 
 
+.animated-icon1, .animated-icon2, .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate( 
+0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate( 
+0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate( 
+0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate( 
+0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-40%, -50%) !important;
+}
+
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(
+0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(
+0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    }
+    
+    
+    .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    }
+    
+    .animated-icon1, .animated-icon2, .animated-icon3 {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin: 0px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        }
+        
+        .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        }
+        
+        .animated-icon1 span {
+        background: var(--pampas-white);
+        }
+        
+        .animated-icon2 span {
+        background:var(--pampas-white);
+        }
+        
+        .animated-icon3 span {
+        background:var(--pampas-white);
+        }
+        
+        .animated-icon1 span:nth-child(1) {
+        top: 0px;
+        }
+        
+        .animated-icon1 span:nth-child(2) {
+        top: 5px;
+        }
+        
+        .animated-icon1 span:nth-child(3) {
+        top: 20px;
+        }
+        
+        .animated-icon1.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        }
+        
+        .animated-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+        }
+        
+        .animated-icon1.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        }
+
+        .navbar-toggler:focus {
+            text-decoration: none;
+            outline: 0;
+            box-shadow: 0 0 0 0;
+        }
+
+        .animated-icon1 span:nth-child(2) {
+            top: 10px;
+            height: 2px;
+        }
+
+
 .preloader {
     width: 100%;
     height: 100vh;
@@ -183,6 +349,7 @@ body{
 .header-section a{
     color: #ffffff;
     text-decoration: none;
+    font-weight: 200;
 }
 
 .header-section a:hover{
@@ -288,7 +455,6 @@ body{
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
-        border-top: 1px solid #fff;
         margin-top: 3vw;
     }
 
@@ -311,24 +477,33 @@ body{
     flex-direction: column;
 }
 
-.navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-    line-height: 10vw;
-    border-bottom: 1px solid #ffffff14;
-    font-size: 24px;
-    padding-top: 2vw;
+    .collapsed-buttons{
+        display: flex;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+        line-height: 10vw;
+        border-bottom: 1px solid #ffffff14;
+        font-size: 24px;
+        padding-top: 2vw;
+    }
+    
+    .nav-link-ltr {
+        color: #ffffff;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
-}
 
-
-
-
-
-
-.navbar-toggler{
-    background-color: white !important;
+.navbar-toggler {
+    background-color: #ffffff14 !important;
     z-index: 2;
+    border-radius: 50%;
+    width: 60px;
+    padding: 30px;
+    height: 60px;
 }
 
 .navbar{
@@ -366,6 +541,11 @@ body{
 }
 
 .breakline{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-breakline{
     width: 100%;
     border-bottom: 1px solid #fff;
 }
@@ -489,10 +669,6 @@ p{
 }
 
 
-.qualities-section{
-    min-height: 100vh !important;
-}
-
 .qualities{
     background-color: #C9CEC9;
     padding: 20px;
@@ -512,9 +688,6 @@ p{
     margin-bottom: 30px;
 }
 
-.products-section{
-    min-height: 100vh !important;
-}
 
 .products-section p{
     font-weight: 300;
@@ -578,7 +751,6 @@ p{
     background-color: var(--green-haze);
     color: #fff;
     overflow: hidden;
-    min-height: 100vh !important;
     scroll-snap-type: y proximity;
     
 }
@@ -863,6 +1035,15 @@ p{
     }
 
 
+    .qualities-section{
+        min-height: 100vh !important;
+    }
+    .products-section{
+        min-height: 100vh !important;
+    }
+    .company-news-section{
+        min-height: 100vh !important;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
