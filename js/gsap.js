@@ -38,5 +38,10 @@ const container = document.querySelector('body');
 
 
 
-    gsap.fromTo(".nav-item , .navbar-brand", { delay: 3,  duration: 0.5, opacity: 0 ,y:- 50, }, { delay: 3,duration: 0.5, opacity: 1, y: 0, ease: "slow (0.5 , 0.7, false)"})
+    gsap.fromTo(".nav-item , .navbar-brand", { delay: 2.6,  duration: 0.5, opacity: 0 ,stagger: 0.03, y:- 50, ease: "slow (0.9 , 4, false)" }, { delay: 2.6,duration: 0.5, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
+
+
+    gsap.fromTo(".header-contact > span", { delay: 2.6,  duration: 0.5, opacity: 0 ,stagger: 0.03, ease: "slow (0.9 , 4, false)" }, { delay: 2.6,duration: 0.5, opacity: 1,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
+
+    gsap.fromTo(".header-buttons > button", { delay: 2.3,  duration: 0.3, opacity: 0 ,stagger: 0.1, ease: "slow (0.9 , 4, false)" }, { delay: 2.3,duration: 0.3, opacity: 1,stagger: 0.1,  ease: "slow (0.9 , 4, false)"})
 }
