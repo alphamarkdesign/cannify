@@ -26,17 +26,15 @@ const container = document.querySelector('body');
 
   
 
-    gsap.fromTo("div", {duration: 2, stagger: 0.5},{duration:2, y: 0, stagger :0.5})
-  
-
     gsap.from("h1 span>span", {
       duration: 1.5,
+      delay: 1.5,
       y: 250,
       autoAlpha: 0,
       ease: Power3.out,
       stagger: 0.3
     })
   
-
-
+    gsap.fromTo(".breakline", { delay: 2,  duration: 1, opacity: 0, width: 0}, { delay: 2,duration: 1, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
+    // gsap.fromTo(".vid", {delay: 1.5, duration: 1, height: 0},{delay: 1.5, duration: 1, height: '70vh', ease: "slow (0.3, 0.4, false"})
 }
