@@ -4,7 +4,7 @@ window.onload = function() {
 gsap.registerPlugin(ScrollTrigger);
 // ScrollTrigger.batch(".reveal-section div", {onEnter: batch => gsap.fromTo(batch, { play:1, duration:1 , opacity: 0, stagger: 0.1, y:150, overwrite: false }, { play: 1,duration: 1, opacity: 1, stagger: 0.1, y: 0, overwrite: false}), });
 ScrollTrigger.batch(".pic-col img", {onEnter: batch=> gsap.from(batch, {duration: 1.5,
-  y: 200,
+  x: 200,
   autoAlpha: 0,
   ease: Power3.out, stagger: 0.3})})
 
