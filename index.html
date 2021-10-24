@@ -270,11 +270,11 @@
                 <div class="row info-carousel">
                     <div class="col-lg-2">
                         <p>Next/Prev:</p>
-                        <button class="next-button"></button>
                         <button class="prev-button"></button>
+                        <button class="next-button"></button>
                     </div>
                     <div class="col-lg-10">
-                        <div class="carousel" data-flickity='{ "freeScroll": false, "adaptiveHeight": true, "cellAlign": "left" ,"wrapAround": true, "pageDots": false , "prevNextButtons": false, "imagesLoaded": true }'>
+                        <div class="carousel mycarousel" data-flickity='{ "freeScroll": false, "adaptiveHeight": true, "cellAlign": "left" ,"wrapAround": true, "pageDots": false , "prevNextButtons": false, "imagesLoaded": true }'>
                             
                                 <div class="carousel-cell">
                                     <img class="" src="./img/doctor.png" alt="Doctor">
@@ -459,15 +459,25 @@
     $(document).ready(function () {
 
     $("#mob-menu").click(function (event) {
-        gsap.fromTo(".navbar-content", {duration: 0.5, opacity: 0 ,stagger: 0.03, y:- 50, ease: "slow (0.9 , 4, false)" }, {duration: 0.5, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
-        gsap.fromTo(".nav-breakline", {delay: 0.2, duration: 0.4, opacity: 0, width: 0}, {delay: 0.2, duration: 0.4, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
-        gsap.fromTo(".navbar-nav > .nav-item", {delay: 0.6, duration: 0.5, opacity: 0, x: -50,stagger: 0.2}, {delay: 0.6, duration: 0.5, opacity: 1, x: 0, stagger: 0.2,})
-        gsap.fromTo(".menu-button", {delay: 1.5, duration: 0.9, opacity: 0, x: -150,stagger: 0.1}, {delay: 1.5, duration: 1, opacity: 0.9, x:0, stagger: 0.1,})
-        gsap.fromTo(".only-collapsed > span", {delay: 2.3, duration: 0.5, opacity: 0, x: -50,stagger: 0.2}, {delay: 2.3, duration: 0.5, opacity: 1, x: 0, stagger: 0.2,})
+        gsap.fromTo(".navbar-content", {once: true, toggleActions: "play, none, none, none" ,duration: 0.4, opacity: 0 ,stagger: 0.03, y:- 50, ease: "slow (0.9 , 4, false)" }, {once: true, toggleActions: "play, none, none, none" ,duration: 0.4, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
+        gsap.fromTo(".nav-breakline", {once: true, toggleActions: "play, none, none, none" ,delay: 0.2, duration: 0.3, opacity: 0, width: 0}, {once: true, toggleActions: "play, none, none, none" ,delay: 0.2, duration: 0.3, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
+        gsap.fromTo(".navbar-nav > .nav-item", {once: true, toggleActions: "play, none, none, none" ,delay: 0.6, duration: 0.4, opacity: 0, x: -50,stagger: 0.2}, {once: true, toggleActions: "play, none, none, none" ,delay: 0.6, duration: 0.4, opacity: 1, x: 0, stagger: 0.2,})
+        gsap.fromTo(".menu-button", {once: true, toggleActions: "play, none, none, none" ,delay: 1.5, duration: 0.8, opacity: 0, x: -150,stagger: 0.1}, {once: true, toggleActions: "play, none, none, none" ,delay: 1.5, duration: 0.8, opacity: 1, x:0, stagger: 0.1,})
+        gsap.fromTo(".only-collapsed > span", {once: true, toggleActions: "play, none, none, none" ,delay: 2.3, duration: 0.4, opacity: 0, x: -50,stagger: 0.2}, {once: true, toggleActions: "play, none, none, none" ,delay: 2.3, duration: 0.4, opacity: 1, x: 0, stagger: 0.2,})
     });
     });
     </script>
+<script>
+    var $carousel = $document.querySelector('.carousel').flickity();
 
+$('.prev-button').on( 'click', function() {
+  $carousel.flickity('previous');
+});
+    
+$('.next-button').on( 'click', function() {
+    $carousel.flickity('next');
+    });
+</script>
     <script>
 $(window).on("load", function(){
 

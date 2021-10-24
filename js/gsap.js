@@ -27,15 +27,16 @@ const container = document.querySelector('body');
     gsap.from("h1 span>span", {
       duration: 1.5,
       delay: 1.5,
-      y: 250,
+      y: 200,
       autoAlpha: 0,
       ease: Power3.out,
       stagger: 0.3
     })
-  
+
     gsap.fromTo(".breakline", { delay: 2,  duration: 0.7, opacity: 0, width: 0}, { delay: 2,duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
     // gsap.fromTo(".vid", {delay: 1.5, duration: 1, height: 0},{delay: 1.5, duration: 1, height: '70vh', ease: "slow (0.3, 0.4, false"})
 
+    ScrollTrigger.batch("div", {onEnter: batch => gsap.fromTo(batch, { play:1, duration:1 , opacity: 0, stagger: 0.1, y:100, overwrite: false }, { play: 1,duration: 1, opacity: 1, stagger: 0.1, y: 0, overwrite: false}), });
 
 
     gsap.fromTo(".nav-item , .navbar-brand", { delay: 2.6,  duration: 0.5, opacity: 0 ,stagger: 0.03, y:- 50, ease: "slow (0.9 , 4, false)" }, { delay: 2.6,duration: 0.5, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})

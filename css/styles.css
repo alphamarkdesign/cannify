@@ -793,7 +793,7 @@ p{
     font-size: 12px;
 }
 
-.next-button::before{
+.prev-button::before{
     content: '\2190';
     color: #fff;
     top: 50%;
@@ -810,7 +810,7 @@ p{
     transition: all .3s ease-in-out;
 }
 
-.prev-button::before{
+.next-button::before{
     content: '\2192';
     color: #fff;
     top: 50%;
