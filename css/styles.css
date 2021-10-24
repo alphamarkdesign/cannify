@@ -827,12 +827,14 @@ p{
     transition: all .3s ease-in-out;
 }
 
-.box{
+.reveal {
+    visibility: hidden;
+    position: relative;
     width: 100%;
     height: 100%;
-    background: var(--pampas-white);
-    z-index: 999;
+    overflow: hidden;
 }
+
 .next-button:hover{
     background-color: rgba(135, 135, 135, 0.449);
     transition: all .3s ease-in-out;
