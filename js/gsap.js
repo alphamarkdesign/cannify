@@ -3,7 +3,7 @@ window.onload = function() {
 
 
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.batch("h2, h3, h4, h5, h6", {onEnter: batch => gsap.from(batch, {  duration:1 , opacity: 0, x:100, stagger: 0.1, ease: " power4.out" })});
+// ScrollTrigger.batch("h2, h3, h4, h5, h6", {onEnter: batch => gsap.from(batch, {  duration:1 , opacity: 0, x:100, stagger: 0.1, ease: " power4.out" })});
 
 
 const sections = gsap.utils.toArray(".panel");
@@ -36,69 +36,35 @@ const container = document.querySelector('body');
       stagger: 0.3
     })
 
+    // gsap.from(".nav-item ", {
+    //   delay: 1.5,
+    //   duration: 0.5,
+    //   y: 50,
+    //   autoAlpha: 0,
+    //   ease: Power3.out,
+    //   stagger: 0.1
+    // })
+
     
 
 
 
-    gsap.fromTo(".breakline", { delay: 2,  duration: 0.7, opacity: 0, width: 0}, { delay: 2,duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
-    // gsap.fromTo(".vid", {delay: 1.5, duration: 1, height: 0},{delay: 1.5, duration: 1, height: '70vh', ease: "slow (0.3, 0.4, false"})
-
-    
-
+    gsap.fromTo(".header-breakline", { delay: 1.7,  duration: 0.7, opacity: 0, width: 0}, { delay: 1.7,duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})
 
     gsap.fromTo(".nav-item , .navbar-brand", { delay: 2,  duration: 0.5, opacity: 0 ,stagger: 0.03, y: 50, ease: "slow (0.9 , 4, false)" }, { delay: 2,duration: 0.5, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
 
+    gsap.fromTo(".header-contact > span", { delay: 2,  duration: 0.5, opacity: 0 ,stagger: 0.03, ease: "slow (0.9 , 4, false)" }, { delay: 2,duration: 0.5, opacity: 1,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
 
-    gsap.fromTo(".header-contact > span", { delay: 2.6,  duration: 0.5, opacity: 0 ,stagger: 0.03, ease: "slow (0.9 , 4, false)" }, { delay: 2.6,duration: 0.5, opacity: 1,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
-
-    gsap.fromTo(".header-buttons > button", { delay: 2.3,  duration: 0.3, opacity: 0 ,stagger: 0.1, ease: "slow (0.9 , 4, false)" }, { delay: 2.3,duration: 0.3, opacity: 1,stagger: 0.1,  ease: "slow (0.9 , 4, false)"})
-
-
-      // gsap.from("h2 span>span", {
-      //   duration: 1.5,
-      //   delay: 1.5,
-      //   y: 200,
-      //   autoAlpha: 0,
-      //   ease: Power3.out,
-      //   stagger: 0.3
-      // })
-
-
-
-      const childSplit = new SplitText("h2", {
-        type: "lines",
-        linesClass: "split-child"
-      });
-      const parentSplit = new SplitText("h2", {
-        // type: "lines",
-        linesClass: "split-parent"
-      });
-      
-      gsap.from(childSplit.lines, {
-        delay: 5,
-        duration: 1.5,
-        yPercent: 100,
-        ease: "power4",
-        stagger: 0.1
-      });
-      
-
+    gsap.fromTo(".header-buttons > button", { delay: 1.9,  duration: 0.3, opacity: 0 ,stagger: 0.1, ease: "slow (0.9 , 4, false)" }, { delay: 1.9,duration: 0.3, opacity: 1,stagger: 0.1,  ease: "slow (0.9 , 4, false)"})
      
 
-}
+    ScrollTrigger.batch(".reveal", {onEnter: batch => gsap.to(batch, {  duration:1 , height: 0, stagger: 0.3 })});
 
-ScrollTrigger.batch(".reveal", {onEnter: batch => gsap.to(batch, {  duration:1 , height: 0, stagger: 0.3 })});
+    ScrollTrigger.batch(".breakline", {onEnter : batch => gsap.fromTo(batch, { duration: 0.7, opacity: 0, width: 0}, {duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})})
+    ScrollTrigger.batch(".black-breakline", {onEnter : batch => gsap.fromTo(batch, { duration: 0.7, opacity: 0, width: 0}, {duration: 0.7, opacity: 1, width: '100%', ease: "slow (0.3 , 0.4, false)"})})
 
-// gsap.from(".h2-intro", {
-//   scrollTrigger:{
-//     trigger: ".h2-intro",
-//     toggleActions: "play none none reset",
-//   duration: 1.5,
-//   delay: 1.5,
-//   y: 200,
-//   autoAlpha: 0,
-//   ease: Power3.out
-// }
-// })
+} 
+
+
 
 
