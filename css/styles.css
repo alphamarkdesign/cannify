@@ -374,7 +374,7 @@ body{
 
 .btn-primary-header{
     color: #ffffff;
-    margin: 0px 10px;
+    margin: 0px 5px;
     padding: 5px 20px;
     border: 0.5px solid rgba(135, 135, 135, 0.537);
     background-color: transparent;
@@ -863,6 +863,11 @@ p{
     padding-bottom: 4%;
 }
 
+.news-breakline{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
 .info-carousel p{
     color: #ffffff70;
     font-size: 12px;
@@ -908,7 +913,8 @@ p{
     position: absolute;
     overflow: hidden;
     z-index: 1;
-    width: 306px;
+    min-width: 100%;
+    width: min-content;
     height: 550px;
     background: var(--pampas-white) !important;
 }
@@ -1117,7 +1123,8 @@ p{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
-@media screen and ( min-width: 768px ){}
+@media screen and ( min-width: 768px ){
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -1159,16 +1166,23 @@ p{
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
-    
+
+    .reveal {
+        display: inline-block;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        width: 250px !important;
+        height: 550px;
+        background: var(--pampas-white) !important;
+    }
 
     .breakline{
         display: none;
