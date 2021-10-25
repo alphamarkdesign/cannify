@@ -1,7 +1,5 @@
 
 
-
-
 h2{
     font-size: 64px;
     letter-spacing: -1.5px;
@@ -705,6 +703,7 @@ body{
     color: #fff;
     font-size: 96px;
     padding-left: 40px;
+    line-height: 1 !important;
 }
 
 .third-section .col-md-4{
@@ -1066,13 +1065,13 @@ p{
 
 .last-row a{
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     color: var(--green-haze);
 }
 
 .last-row a:hover{
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     text-decoration: none;
     color: var(--green-haze);
 }
@@ -1196,12 +1195,14 @@ p{
     }
 
 
-    h1{
-        font-size: 48px !important;
+    .headline-container h1{
+        font-size: 64px !important;
+        letter-spacing: -2px;
+        padding-left:0;
     }
 
     h2{
-       font-size: 36px !important;
+       font-size: 48px !important;
     }
 
 
