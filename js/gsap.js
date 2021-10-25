@@ -3,7 +3,7 @@ window.onload = function() {
 
 
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.batch(".reveal-section div", {onEnter: batch => gsap.fromTo(batch, { play:1, duration:0.5 , opacity: 0, stagger: 0.1, overwrite: false }, { play: 1,duration: 0.5, opacity: 1, stagger: 0.1, overwrite: false}), });
+// ScrollTrigger.batch(".reveal-section div", {onEnter: batch => gsap.fromTo(batch, {  duration:0.5 , opacity: 0, stagger: 0.1, ease: " power1.out" }, { duration: 0.5, opacity: 1, stagger: 0.1, ease: " power1.out"}), });
 ScrollTrigger.batch(".pic-col img", {onEnter: batch=> gsap.from(batch, {duration: 1.5,
   x: 200,
   autoAlpha: 0,
