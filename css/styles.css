@@ -907,18 +907,18 @@ p{
     transition: all .3s ease-in-out;
 }
 
-
 .reveal {
     display: inline-block;
     position: absolute;
     overflow: hidden;
     z-index: 1;
-    min-width: 100%;
-    width: min-content;
-    height: 550px;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: 100%;
     background: var(--pampas-white) !important;
 }
-
 .next-button:hover{
     background-color: rgba(135, 135, 135, 0.449);
     transition: all .3s ease-in-out;
@@ -1179,9 +1179,11 @@ p{
         position: absolute;
         overflow: hidden;
         z-index: 1;
-        min-width: 100%;
-        width: min-content;
-        height: 550px;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        height: 100%;
         background: var(--pampas-white) !important;
     }
 
@@ -1250,6 +1252,10 @@ p{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+
+    .header-breakline{
+        display: none;
+    }
 
     .circle{
         display: none;
