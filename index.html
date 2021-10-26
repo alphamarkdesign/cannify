@@ -35,9 +35,7 @@
                 <div class="header-buttons">
                     <button class="btn-primary-header login-circle">HCP Login</button>
                     <button class="btn-primary-header">Cannify Shop</button>
-                    <button class="btn-primary-header" type="button">De <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg> </div>
+                    <button class="btn-primary-header" type="button">De</div>
                 </div>
             </div>
             <div class="header-breakline"></div>
@@ -56,15 +54,16 @@
                     <li class="nav-item">
                         <span>
                             <span>
-                      <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company <img width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
-                            </span>
-                        </span>
+                      <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler1" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company<img id="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+
                             <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                               </div>
+
+                            </span>
+                        </span>
                     </li>
                     <li class="nav-item">
                         <span>
@@ -76,15 +75,15 @@
                     <li class="nav-item">
                         <span>
                             <span>
-                        <a href="#" class="nav-link nav-link-ltr dropdown-toggle"id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
-                            </span>
-                        </span>
+                        <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img id="dropdown-icon2" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+                            
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                               </div>
+                            </span>
+                        </span>
                       </li>
                     <li class="nav-item">
                         <span>
@@ -110,10 +109,7 @@
                     <button class="btn-primary-header">Cannify Shop</button>
                 </div>
                 <div class="menu-button">
-                    <button class="btn-primary-header" type="button" href="index-de.html" >De <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                    </div>
+                    <button class="btn-primary-header" type="button" href="index-de.html" >De</div>
                 </div>
                     <div class="only-collapsed collapsed-contact">
                         <span class="contact-tel-email">Telephone <br> <a href="tel:+49 (0) 241 705 3991"><svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -390,9 +386,9 @@
             <div class="col-md-2 contact-col-1">
                 <div class="footer-categories">Membership</div>
                 <img class="w-50 img-responsive m-2" src="./img/can-med.png" alt="Cannabinoid Medicines">
-                <img class="w-50 img-responsive m-2" src="./img/bpc.svg" alt="BPC">
+                <img class="w-50 img-responsive m-2" src="./img/bpc.png" alt="BPC">
                 <br>
-                <img class="w-50 img-responsive m-2" src="./img/vca.svg" alt="VCA">
+                <img class="w-50 img-responsive m-2" src="./img/vca.png" alt="VCA">
             </div>
         </div>
         <div class="row last-row footer-last-row">
@@ -459,46 +455,30 @@
     });
     </script>
 
+    <script>
+        $(document).ready(function(){
+
+            $(".dropdown-icon-toggler1").click(function(event){
+                event.preventDefault();
+                $("#dropdown-icon").toggleClass("dropdown-chevron-up");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".dropdown-icon-toggler2").click(function(event){
+                event.preventDefault();
+                $("#dropdown-icon2").toggleClass("dropdown-chevron-up");
+            });
+        });
+    </script>
+
 
 
 <script>
-
-
-    // $("#mob-menu").click(function (event) {
-    //     let tl = gsap.timeline({ repeat: 0 });
-    //     // tl.fromTo(".navbar-content", {  duration: 1, opacity: 0 ,stagger: 0.03, y:- 50, ease: "slow (0.9 , 4, false)" }, { duration: 0.4, opacity: 1, y: 0,stagger: 0.03,  ease: "slow (0.9 , 4, false)"})
-    //     tl.fromTo(".nav-breakline", {  opacity: 0, width: 0}, { duration: 0.3, opacity: 1, width: '100%'})
-    //     .fromTo(".navbar-nav > .nav-item", {  y: 50, opacity: 0, }, { duration: 0.4, y:0, opacity: 1,  stagger: 0.2,})
-    //     .fromTo(".menu-button", {  opacity: 0, }, { duration: 0.5, opacity: 1,  stagger: 0.1,})
-    //     .fromTo(".only-collapsed > span", {  opacity: 0, y: 50,}, { duration: 0.2, opacity: 1, y:0, stagger: 0.1,})
-        
-    // });
-
-        // $("#mob-menu").each(function(){
-        // let tl = gsap.timeline({ paused:true, reversed:true });
-        
-        // tl.fromTo(".navbar-nav > .nav-item", {  y: 50, opacity: 0, }, { duration: 0.4, y:0, opacity: 1,  stagger: 0.2,})
-        // .reversed(true);//this reverses the playhead at a time of 0. when you "un-reverse" on click it will play forward
-        // this.animation = tl;
-        // })
-
-
-
-        // $("#mob-menu").click(function(){
-        // this.animation.reversed(!this.animation.reversed());
-        // })
-
-
-        // const ld_gray = gsap.timeline({paused: true});
-
-        // $("#mob-menu").click(function (event) {
-        //     ld_gray.to(".nav-item", { duration: 0.4, y:0, opacity: 1});
-        //     ld_gray.restart();
-        // });
-
-
         var $hamburger = $('#mob-menu');
-
 
         var hamburgerMotion = new TimelineMax()
         .fromTo(".nav-breakline", {  opacity: 0, width: 0}, { duration: 0.3, opacity: 1, width: '100%'})
@@ -510,11 +490,7 @@
         $hamburger.on('click', function(e) {
         hamburgerMotion.restart(!hamburgerMotion.restart());
         });
-
-
     </script>
-
-
 
     <script>
 $(window).on("load", function(){
@@ -541,7 +517,6 @@ $(window).on("load", function(){
     });
 });
     </script>
-
 
     <script>
         jQuery(document).ready(function() {
@@ -572,11 +547,9 @@ $(window).on("load", function(){
                 TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
             } );
     });
-
 function moveMagnet(event) {
   var magnetButton = event.currentTarget
   var bounding = magnetButton.getBoundingClientRect()
-
 
   TweenMax.to( magnetButton, 1, {
     x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * strength,
@@ -584,15 +557,10 @@ function moveMagnet(event) {
     ease: Power4.easeOut
   })
 }
-
       </script>
 
-
-
 <script>
-
 // external js: flickity.pkgd.js
-
 $(document).ready( function() {
   var $gallery = $('.carousel').flickity({
     prevNextButtons: false,
@@ -613,9 +581,9 @@ $(document).ready( function() {
 
 
 });
-
-
 </script>
+
+
 
 </body>
 </html>
