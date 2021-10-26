@@ -54,11 +54,12 @@
                   <ul class="navbar-nav navitem-text" >
                       <div class="nav-breakline"></div>
                     <li class="nav-item">
-                        
-                      <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd"
-                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
-                             <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <span>
+                            <span>
+                      <a href="#" class="nav-link nav-link-ltr dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company <img width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+                            </span>
+                        </span>
+                            <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <div class="dropdown-divider"></div>
@@ -66,13 +67,19 @@
                               </div>
                     </li>
                     <li class="nav-item">
+                        <span>
+                            <span>
                       <a href="#" class="nav-link nav-link-ltr">Products</a>
+                            </span>
+                        </span>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link nav-link-ltr dropdown-toggle"id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd"
-                               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
-                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <span>
+                            <span>
+                        <a href="#" class="nav-link nav-link-ltr dropdown-toggle"id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
+                            </span>
+                        </span>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <div class="dropdown-divider"></div>
@@ -80,10 +87,18 @@
                               </div>
                       </li>
                     <li class="nav-item">
+                        <span>
+                            <span>
                         <a href="#" class="nav-link nav-link-ltr">Insights</a>
+                            </span>
+                        </span>
                     </li>
                     <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-ltr">Contact</a>
+                        <span>
+                            <span>
+                        <a href="#" class="nav-link nav-link-ltr">Contact</a>
+                            </span>
+                        </span>
                     </li>
                   </ul>
                   <!-- Collapsed-Show -->
@@ -95,7 +110,7 @@
                     <button class="btn-primary-header">Cannify Shop</button>
                 </div>
                 <div class="menu-button">
-                    <button class="btn btn-primary-header" type="button" href="index-de.html" >De <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <button class="btn-primary-header" type="button" href="index-de.html" >De <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                       </svg>
                     </div>
@@ -487,7 +502,7 @@
 
         var hamburgerMotion = new TimelineMax()
         .fromTo(".nav-breakline", {  opacity: 0, width: 0}, { duration: 0.3, opacity: 1, width: '100%'})
-        .fromTo(".navbar-nav > .nav-item", { delay:-1, y: 50, opacity: 0, }, { duration: 0.4, y:0, opacity: 1,  stagger: 0.1,})
+        .fromTo(".nav-item span>span", { delay:-1, y: 50, opacity: 0, }, { duration: 0.4, y:0, opacity: 1,  stagger: 0.1,})
         .fromTo(".menu-button", {  opacity: 0, }, { duration: 0.5, opacity: 1,  stagger: 0.1,})
         .fromTo(".only-collapsed > span", {  opacity: 0, y: 50,}, { duration: 0.2, opacity: 1, y:0, stagger: 0.1,})
         .restart()

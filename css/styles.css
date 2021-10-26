@@ -310,6 +310,13 @@ h3{
     overflow: hidden;
 }
 
+.nav-item span{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+
+
 h2 span{
     display: inline-block;
     overflow: hidden;
@@ -509,7 +516,9 @@ body{
     padding-top: 10vw;
 }
 
-
+    .collapsed-buttons button{
+        padding: 5px 10px;
+    }
 
 .collapsed-contact {
     padding-top: 0 !important;
