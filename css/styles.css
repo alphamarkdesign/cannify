@@ -23,6 +23,14 @@ h3{
 }
 
 
+.color-green{
+    background-color:var(--green-haze);
+}
+
+.color-pampas{
+    background-color: var(--pampas-white);
+}
+
 .change-bg-color{
     background-color: var(--green-haze) !important;
 }
@@ -77,8 +85,8 @@ h3{
 
 
 :root{
-    --pampas-white: #E5E3DA;
-    --green-haze: #16413A;
+    --pampas-white: #E4E3DC;
+    --green-haze: #1B3B36;
     --salomie: #f2d06d;
     --valencia: #d03f4e;
     --royal-blue: #3e5e8c;
