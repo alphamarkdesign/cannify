@@ -455,29 +455,6 @@ body{
       text-decoration: none !important;
   }
 
-  .nav-link:before {
-    content: '';
-    position: absolute;
-    width: 75%;
-    height: 1.5px;
-    bottom:0;
-    margin: 0 auto;
-    left: 20px;
-    padding-left: .5rem;
-    background-color: #ffff;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s;
-  }
-  .nav-link:hover:before {
-    transform-origin: bottom left;
-    transform: scaleX(1);
-  }
-
-
-
-
-
   .link-plus {
     transition: 0.70s;
     -webkit-transition: 0.70s;
@@ -536,7 +513,6 @@ body{
 
 .collapsed-contact {
     padding-top: 0 !important;
-    margin-left: 15px;
     bottom: 7%;
     display: flex;
     position: absolute;
@@ -872,14 +848,13 @@ p{
     font-size: 12px;
 }
 
-.prev-button::before{
-    content: '\2190';
-    color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
+.flickity-button{
+    visibility: hidden;
 }
 
-.next-button{
+
+
+.button--next{
     width: 50px;
     height: 50px;
     border: 1px solid #fff;
@@ -889,14 +864,8 @@ p{
     transition: all .3s ease-in-out;
 }
 
-.next-button::before{
-    content: '\2192';
-    color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.prev-button{
+.button--previous{
     width: 50px;
     height: 50px;
     border: 1px solid #fff;
@@ -905,6 +874,17 @@ p{
     margin-left: 5px;
     transition: all .3s ease-in-out;
 }
+
+.button--next:hover{
+    background-color: rgba(135, 135, 135, 0.449);
+    transition: all .3s ease-in-out;
+}
+
+.button--previous:hover{
+    background-color: rgba(135, 135, 135, 0.449);
+    transition: all .3s ease-in-out;
+}
+
 
 .reveal {
     display: inline-block;
@@ -918,16 +898,6 @@ p{
     height: 100%;
     background: var(--pampas-white) !important;
 }
-.next-button:hover{
-    background-color: rgba(135, 135, 135, 0.449);
-    transition: all .3s ease-in-out;
-}
-
-.prev-button:hover{
-    background-color: rgba(135, 135, 135, 0.449);
-    transition: all .3s ease-in-out;
-}
-
 
 .news-carousel{
     min-height: 100%;
@@ -965,7 +935,7 @@ p{
     font-size: 25px;
     color:#ffffff;
     font-weight: 300;
-    margin-bottom:40px;
+    margin-bottom:35px;
     padding-top: 15%;
     line-height: 1.2;
     letter-spacing: -0.5px;
@@ -1123,10 +1093,34 @@ p{
 @media only screen and (min-width: 600px) {}
 
 @media screen and ( min-width: 768px ){
+    .nav-link:before {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 1.5px;
+        bottom:0;
+        margin: 0 auto;
+        left: 20px;
+        padding-left: .5rem;
+        background-color: #ffff;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+      }
+      .nav-link:hover:before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+      }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+
+    
+
+
     .circle {
         position: absolute;
       background-color:#215145;
@@ -1172,6 +1166,7 @@ p{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
+    
 
     .reveal {
         display: inline-block;
