@@ -7,7 +7,8 @@
     <meta name="author" content="Boban Madzoski">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cannify - Medical Cannabis Importer</title>
-
+    <link rel="icon" href="/favicon.ico">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -57,9 +58,10 @@
                       <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler1" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company<img id="dropdown-icon" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
 
                             <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="#">GMP Certificate</a>
+                                <a class="dropdown-item" href="#">Downloads</a>
+                                <a class="dropdown-item" href="#">Careers</a>
                               </div>
 
                             </span>
@@ -78,9 +80,10 @@
                         <a href="#" class="nav-link nav-link-ltr dropdown-toggle dropdown-icon-toggler2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medical Cannabis<img id="dropdown-icon2" width="18px" height="18px" src="./img/chevron-down.svg" alt="Change Language"></a>
                             
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">General Information</a>
+                                <a class="dropdown-item" href="#">For Patients</a>
+                                <a class="dropdown-item" href="#">For Pharmacist</a>
+                                <a class="dropdown-item" href="#">For Doctors</a>
                               </div>
                             </span>
                         </span>
@@ -417,203 +420,14 @@
 </section>
 </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script src="./js/main.js"></script>
     <script src="./js/gsap.js"></script>
     <script src="./js/script.js"></script>
-    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/flickity.pkgd.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-        
-        $('.first-button').on('click', function () {
-        
-          $('.animated-icon1').toggleClass('open');
-        });
-        $('.second-button').on('click', function () {
-        
-          $('.animated-icon2').toggleClass('open');
-        });
-        $('.third-button').on('click', function () {
-        
-          $('.animated-icon3').toggleClass('open');
-        });
-        });
-        </script>
-
-    <script>
-    $(document).ready(function () {
-
-    $("#mob-menu").click(function (event) {
-        event.preventDefault();
-        $('body').toggleClass('fixed-position');
-        $('.section-padding').toggleClass('remove-padding')
-        $('.navbar').toggleClass('navbar-padding')
-    });
-    });
-    </script>
-
-    <script>
-        $(document).ready(function(){
-
-            $(".dropdown-icon-toggler1").click(function(event){
-                event.preventDefault();
-                $("#dropdown-icon").toggleClass("dropdown-chevron-up");
-            });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function(){
-
-            $(".dropdown-icon-toggler2").click(function(event){
-                event.preventDefault();
-                $("#dropdown-icon2").toggleClass("dropdown-chevron-up");
-            });
-        });
-    </script>
-
-
-
-<script>
-        var $hamburger = $('#mob-menu');
-
-        var hamburgerMotion = new TimelineMax()
-        .fromTo(".nav-breakline", {  opacity: 0, width: 0}, { duration: 0.3, opacity: 1, width: '100%'})
-        .fromTo(".nav-item span>span", { delay:-1, y: 50, opacity: 0, }, { duration: 0.4, y:0, opacity: 1,  stagger: 0.1,})
-        .fromTo(".menu-button", {  opacity: 0, }, { duration: 0.5, opacity: 1,  stagger: 0.1,})
-        .fromTo(".only-collapsed > span", {  opacity: 0, y: 50,}, { duration: 0.2, opacity: 1, y:0, stagger: 0.1,})
-        .restart()
-
-        $hamburger.on('click', function(e) {
-        hamburgerMotion.restart(!hamburgerMotion.restart());
-        });
-    </script>
-
-    <script>
-$(window).on("load", function(){
-
-    gsap.to('.intro-content > p', 1, {
-        delay: 0.6 ,
-        duration: 1,
-        y: '200',
-        ease: 'slow (0.9, 1, false)'
-    });
-
-    gsap.to('.intro-content > img', 0.9, {
-        delay: 0.7 ,
-        duration: 1,
-        y: '200',
-        ease: 'slow (0.9, 1, false)'
-    });
-
-    let tl = new TimelineMax();
-    tl.to('.preloader', 1.2, {
-        delay: 1 ,
-        height:'0vh',
-        ease: 'expo.inOut'
-    });
-});
-    </script>
-
-    <script>
-        jQuery(document).ready(function() {
-        var mouseX = 0, mouseY = 0;
-        var xp = 0, yp = 0;
-        
-        $(document).mousemove(function(e){
-            mouseX = e.pageX - 13;
-            mouseY = e.pageY - 13; 
-        });
-            
-        setInterval(function(){
-            xp += ((mouseX - xp)/3);
-            yp += ((mouseY - yp)/3);
-            $("#circle").css({left: xp +'px', top: yp +'px'});
-        }, 20);
-
-        });
-    </script>
-
-      <script>
-          var magnets = document.querySelectorAll('.magnetic, .carousel-magnetic')
-            var strength = 50
-
-            magnets.forEach( (magnet) => {
-            magnet.addEventListener('mousemove', moveMagnet );
-            magnet.addEventListener('mouseout', function(event) {
-                TweenMax.to( event.currentTarget, 1, {x: 0, y: 0, ease: Power4.easeOut})
-            } );
-    });
-function moveMagnet(event) {
-  var magnetButton = event.currentTarget
-  var bounding = magnetButton.getBoundingClientRect()
-
-  TweenMax.to( magnetButton, 1, {
-    x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * strength,
-    y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * strength,
-    ease: Power4.easeOut
-  })
-}
-      </script>
-
-<script>
-// external js: flickity.pkgd.js
-$(document).ready( function() {
-  var $gallery = $('.carousel').flickity({
-    prevNextButtons: false,
-  pageDots: false
-  });
-  // Flickity instance
-  var flkty = $gallery.data('flickity');
-  // elements
-
-  // previous
-  var $previousButton = $('.button--previous').on( 'click', function() {
-    $gallery.flickity('previous');
-  });
-  // next
-  var $nextButton = $('.button--next').on( 'click', function() {
-    $gallery.flickity('next');
-  });
-
-
-});
-</script>
-
-<script>jQuery(function($){
-    $(window).scroll(function() {
-
-  // selectors
-  var $window = $(window),
-      $body = $('body'),
-      $panel = $('.panel');
-
-  // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() /5);
-
-  $panel.each(function () {
-    var $this = $(this);
-
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
-
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
-    }
-  });
-
-}).scroll();
-});</script>
 
 </body>
 </html>
