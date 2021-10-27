@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
     gsap.from("h1 span>span", {duration: 1.5,delay: 1.5,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
 
     ScrollTrigger.batch(".reveal-section h2", {onEnter : batch => gsap.from(batch, {duration: 0.6, x: 50})})
-    ScrollTrigger.batch(".reveal-section p", {onEnter : batch => gsap.from(batch, {delay: 0.3, duration: 0.5, opacity:0, ease: Power3.out,})})
-    ScrollTrigger.batch(".reveal-section a", {onEnter : batch => gsap.from(batch, {delay: 0.3, duration: 0.5, opacity:0, ease: Power3.out,})})
+    ScrollTrigger.batch(".reveal-section p", {onEnter : batch => gsap.from(batch, {delay: 0.3, duration: 0.5, opacity:0, ease: sine.out,})})
+    ScrollTrigger.batch(".reveal-section a", {onEnter : batch => gsap.from(batch, {delay: 0.3, duration: 0.5, opacity:0, ease: sine.out,})})
     //Text Animations
 
     //Header Animations
