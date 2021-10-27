@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
     gsap.from("h1 span>span", {duration: 1.5,delay: 1.5,y: 200,autoAlpha: 0,ease: Power3.out,stagger: 0.3})
 
     ScrollTrigger.batch(".reveal-section h2", {onEnter : batch => gsap.from(batch, {duration: 0.6, x: 50})})
-    ScrollTrigger.batch(".reveal-section p", {onEnter : batch => gsap.from(batch, {delay: 0.3, duration: 0.5, opacity:0, ease: sine.out,})})
-    ScrollTrigger.batch(".reveal-section a", {onEnter : batch => gsap.from(batch, {delay: 0.3, duration: 0.5, opacity:0, ease: sine.out,})})
+    ScrollTrigger.batch(".reveal-section p", {onEnter : batch => gsap.from(batch, {delay: 0.1 , duration: 0.4, opacity:0})})
+    ScrollTrigger.batch(".reveal-section a", {onEnter : batch => gsap.from(batch, {delay: 0.1, duration: 0.4, opacity:0})})
     //Text Animations
 
     //Header Animations
@@ -40,7 +40,7 @@ var $hamburger = $('#mob-menu');
         .fromTo(".nav-breakline", {  opacity: 0, width: 0}, { duration: 0.3, opacity: 1, width: '100%'})
         .fromTo(".nav-item span>span", { delay:-1, y: 50, opacity: 0, }, { duration: 0.4, y:0, opacity: 1,  stagger: 0.1,})
         .fromTo(".menu-button", {  opacity: 0, }, { duration: 0.5, opacity: 1,  stagger: 0.1,})
-        .fromTo(".only-collapsed > span", {  opacity: 0, y: 50,}, { duration: 0.2, opacity: 1, y:0, stagger: 0.1,})
+        .fromTo(".only-collapsed > span", {delay:-1, opacity: 0, y: 50,}, {delay:-1, duration: 0.5, opacity: 1, y:0, stagger: 0.1,})
         .restart()
 
         $hamburger.on('click', function(e) {
