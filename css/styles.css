@@ -207,13 +207,13 @@ h6{
         transition: .25s ease-in-out;
         }
         .animated-icon1 span {
-        background: var(--pampas-white);
+        background: #000;
         }
         .animated-icon2 span {
-        background:var(--pampas-white);
+        background:#000;
         }
         .animated-icon3 span {
-        background:var(--pampas-white);
+        background:#000;
         }
         .animated-icon1 span:nth-child(1) {
         top: 0px;
@@ -487,7 +487,7 @@ body{
   @media (max-width: 992px) {
     .nav-item > span{
         width: 100%;
-        border-bottom: 1px solid #ffffff14;
+        border-bottom: 1px solid #00000014;
     }
     .nav-item span{
         display: inline-block;
@@ -541,7 +541,7 @@ body{
     box-shadow: none;
 }
 .navbar-toggler {
-    background-color: #ffffff14 !important;
+    background-color: #00000014 !important;
     z-index: 2;
     border-radius: 50%;
     width: 60px;
@@ -576,7 +576,7 @@ body{
 }
 .nav-breakline{
     width: 100%;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 .bg-video{
     display: flex;
