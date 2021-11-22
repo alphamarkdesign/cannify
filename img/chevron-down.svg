@@ -1,7 +1,12 @@
-<svg width="13" height="14" xmlns="http://www.w3.org/2000/svg" fill="none">
- <g>
-  <title>Layer 1</title>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="m9.88108,4.96298c0.21158,0.2278 0.21158,0.59715 0,0.82495l-2.97916,3.20834c-0.21154,0.2278 -0.5545,0.2278 -0.76603,0l-2.97917,-3.20834c-0.21154,-0.2278 -0.21154,-0.59715 0,-0.82495c0.21153,-0.22781 0.5545,-0.22781 0.76603,0l2.59615,2.79585l2.59615,-2.79585c0.21154,-0.22781 0.5545,-0.22781 0.76603,0z" fill="white" id="svg_1"/>
- </g>
-
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 13 14" style="enable-background:new 0 0 13 14;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<g>
+	<path id="svg_1" class="st0" d="M9.9,5c0.2,0.2,0.2,0.6,0,0.8L6.9,9C6.7,9.2,6.3,9.2,6.1,9l-3-3.2C2.9,5.6,2.9,5.2,3.2,5
+		c0.2-0.2,0.6-0.2,0.8,0l2.6,2.8L9.1,5C9.3,4.7,9.7,4.7,9.9,5z"/>
+</g>
 </svg>
